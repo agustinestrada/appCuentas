@@ -67,19 +67,20 @@ function crearTabla(lista) {
 formulario.addEventListener('submit',(e)=>{
     e.preventDefault()
 
-    let aportante = personas.find(i => i.nombre == nombre.value)
+    if (carga.value <= 0) {
+        alert('Por favor ingresar un numero valido')
+        carga.value = 0
+    }else{
+        let aportante = personas.find(i => i.nombre == nombre.value)
 
-    //console.log(aportante);
-    aportante.aporte += parseInt(carga.value)
-
-    tablaComensales.innerHTML = crearTabla(personas)
-    
-    personas.forEach(persona =>{
-        sumaTotal += persona.aporte
-    
-    })
-    
-
+        aportante.aporte += parseInt(carga.value)
+        tablaComensales.innerHTML = crearTabla(personas)
+        
+        personas.forEach(persona =>{
+            sumaTotal += persona.aporte
+        })
+    }
+    carga.value = 0
 })
 
 calcular.addEventListener('click',() => {
