@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 40%;
+    
+}
+
+table{
+    width: 100%;
+
+}
+
+td, th, table, tr{
+    border: 1px solid black;
+}

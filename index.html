@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuentas Claras</title>
+</head>
+<body>
+    <h2>Cuentas claras</h2>
+    
+    <br>
+
+    <div class="saldo"></div><br>
+
+    <form action="/" method="get" class="inputs">
+        <select name="nombre" id="select-persona">
+        </select>
+        <input type="number" name="aporte" id="aporte" placeholder="Aporte">
+        <input type="submit" name="submit" id="submit">
+    </form>
+
+    <br>
+
+    <div>
+        <table id="tablaid">
+        </table>
+    </div>
+    
+    <br>
+    <br>
+    
+    <div>
+        <button class="calcular">Calcular Agora</button>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
